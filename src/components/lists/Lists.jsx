@@ -40,7 +40,7 @@ export default function App({ localStore }) {
   );
 
   async function createList() {
-    let title = "Nouvelle liste"
+    let title = "Circuit"
     // Créeation d'une nouvelle list
     api.createList({ title }).then(res => {
       if (res.data.status.success) {
@@ -89,8 +89,8 @@ export default function App({ localStore }) {
               ))
             )}
             <DragOverlay>{activeId ? <Product productId={activeId} localStoreDataProducts={localStore.dataProducts} /> : null}</DragOverlay>
-            <div className="lists-table-addList">
-              <button type="button" onClick={createList}>Nouvelle liste</button>
+            <div className="lists-add">
+              <button type="button" onClick={createList}>Nouveau circuit</button>
             </div>
         </div>
       </DndContext>

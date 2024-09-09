@@ -22,8 +22,8 @@ export function Product({ productId, localStoreDataProducts, setShowUpdateProduc
         <div className="description">
           {product.description}
         </div>
-        <div className="link">
-          <a href={product.coo} target="_blank" rel="noreferrer">{product.coo}</a>
+        <div className="coo">
+			{product.coo}
         </div>
       </div>
     </div>

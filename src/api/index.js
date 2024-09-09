@@ -23,7 +23,7 @@ const updateProduct = (payload) => api.put(`/product/update`, payload)
 
 const deleteProduct = (_id) => api.delete(`/product/delete/id/${_id}`)
 
-export default {
+const route = {
     createList,
     getList,
     updateListTitle,
@@ -34,5 +34,6 @@ export default {
     getProduct,
     updateProduct,
     deleteProduct
-}
+};
 
+export default route;

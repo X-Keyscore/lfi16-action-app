@@ -73,7 +73,7 @@ export default function Container({ container, localStore, setShowCreateProduct,
 
 	function createLink () {
 		var listCoo = [];
-		container.productsId.map((productId) => {
+		container.productsId.forEach((productId) => {
 			const product = localStore.dataProducts.find(element => element._id === productId);
 			listCoo.push(product.coo.replace(/\s/g, ''));
 		})
@@ -82,7 +82,7 @@ export default function Container({ container, localStore, setShowCreateProduct,
 
 		return (link);
 	}
-	createLink();
+
 	return (
 		<div>
 			<div className="managerLists-table-list-header">

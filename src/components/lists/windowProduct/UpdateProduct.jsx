@@ -4,6 +4,7 @@ import { createPortal } from 'react-dom';
 import { IconDelete } from "../../../svg";
 
 import api from "../../../api"
+import "./window.css";
 
 export default function UpdateProduct({ localStore, product, onClose }) {
   const [inputField, setInputField] = useState({

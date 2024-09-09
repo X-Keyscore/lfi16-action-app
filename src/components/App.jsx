@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
-import ManagerLists from './managerLists/Lists'
+import ManagerLists from './lists/Lists'
 
 import api from "../api"
 
 import "./App.css";
-import "./window.css";
 
 function App() {
   const [dataLists, setDataLists] = useState(null);

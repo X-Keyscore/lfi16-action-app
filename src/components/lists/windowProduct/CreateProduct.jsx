@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createPortal } from 'react-dom';
 
 import api from "../../../api"
+import "./window.css";
 
 export default function CreateProduct({ localStore, parentListId, onClose }) {
   const [inputField, setInputField] = useState({

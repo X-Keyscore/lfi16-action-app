@@ -1,6 +1,3 @@
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
 /* Whitney Book Regular */
 @font-face {
 	font-family: Whitney;
@@ -29,12 +26,9 @@
 	src: url('../fonts/Whitney/WhitneyBoldRegular.woff') format("woff")
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ ROOT ]*/
-
 :root {
-	--bg-z0: #000;
-	--bg-z1: #1b1b1b;
+	--bg-z0: #111112;
+	--bg-z1: #4a4a4a;
 	--box: #502582;
 	--action: #FFEC00;
 	--warn: #F53B3B;
@@ -112,7 +106,7 @@ button {
 	padding: 2px 16px
 }
 .btn-text-default:hover {
-	color: var(--bg-z1)
+	color: var(--bg-z0);
 }
 
 .btn-text-simple {

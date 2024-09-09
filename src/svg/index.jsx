@@ -11,7 +11,6 @@ export const IconCheck = () => {
     );
 };
 
-
 export const IconCross = () => {
     return (
         <svg viewBox="0 0 18 18" width="28" height="28" x="0" y="0">
