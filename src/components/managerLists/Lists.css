@@ -1,0 +1,169 @@
+/* =====[ Edit ]===== */
+.lists {
+    /* Style */
+    background-color: var(--bg-z0);
+    /* Position */
+    display: flex;
+	column-gap: 14px;
+	padding: 12px;
+}
+.managerLists-table-list-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.managerLists-table-list-header-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.managerLists-table-list-header-title>.input-text {
+    user-select: none;
+    color: var(--text);
+    background: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: .02em;
+	user-select: text;
+	-webkit-transition: border-color .30s ease-in-out;
+	transition: border-color .30s ease-in-out;
+	border-radius: 3px;
+	height: 28px;
+	max-width: 295px;
+	padding: 0px 4px;
+	box-sizing: border-box;
+    border: none;
+}
+.managerLists-table-list-header-action {
+    display: flex;
+}
+.managerLists-table-list-link {
+	padding-bottom: 14px;
+	width: 100%;
+   
+}
+.managerLists-table-list-link>a	{
+	text-align: center;
+	color: var(--action);
+	font-size: 17px;
+    cursor: pointer;
+	width: 100%;
+ 	display: block;
+}
+
+.lists-table-addList {
+    padding: 10px 0;
+}
+.lists-table-addList>button {
+    color: var(--text);
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+    background: none;
+    color: var(--text-dull);
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid var(--text-dull);
+    display: flex;
+    height: 42px;
+    min-width: 350px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box
+}
+.lists-table-addList>button:hover {
+    color: var(--text);
+    border-color: var(--text);
+}
+
+.managerLists-table-list-sublist {
+    display: grid;
+    grid-template-columns: minmax(350px, 350px);
+    grid-auto-rows: 1fr;
+    gap: 7px;
+}
+.managerLists--product {
+    /* Style */
+    user-select: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    background-color: var(--box);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    height: 100%;
+}
+
+.managerLists--product>.preview {
+	margin: 8px;
+    flex: 1 1;
+    overflow: hidden;
+}
+.managerLists--product>.preview>.title {
+    display: flex;
+    align-items: center;
+}
+.managerLists--product>.preview>.title>.name {
+    color: var(--text-title);
+    font-size: 20px;
+    margin-left: 10px;
+}
+.managerLists--product>.preview>.description {
+    color: var(--text);
+    font-size: 17px;
+    margin: 5px;
+}
+.managerLists--product>.preview>.link {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px;
+}
+.managerLists--product>.preview>.link>a {
+    color: var(--action);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.managerLists-table-list-sublist-addProduct {
+    padding: 8px;
+}
+.managerLists-table-list-sublist-addProduct>button {
+    /* Style */
+    background: none;
+    color: var(--text-dull);
+    border-radius: 8px;
+    border: 2px solid var(--text-dull);
+    /* Position */
+    display: flex;
+    height: 100%;
+    min-height: 100px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box
+}
+
+.managerLists-table-list-sublist-addProduct>button:hover {
+    color: var(--text);
+    border-color: var(--text);
+}
+
+.managerListsCloseBtn {
+    z-index: 101;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

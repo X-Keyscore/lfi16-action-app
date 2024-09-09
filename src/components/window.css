@@ -1,0 +1,192 @@
+/*//////////////////////////////////////////////////////////////////
+[ WINDOW ]*/
+
+/* =====[ Window ]===== */
+.window {
+	background: none;
+	pointer-events: none;
+	user-select: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1012
+}
+
+/* [ Backdrop ] */
+.window-backdrop {
+	background-color: #0A0A0A;
+	pointer-events: all;
+	opacity: 0.80;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateZ(0px)
+}
+
+/* [ Container ] */
+.window-container {
+	display: flex;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	max-width: 500px;
+	flex-direction: column;
+	justify-content: center
+}
+@media (max-width: 532px) {/*500+16+16*/
+	.window-container {
+		margin: auto 16px auto 16px
+	}
+}
+
+/* [ Tool Header ] */
+.windowToolHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px 16px;
+	border-radius: 16px 16px 0 0;
+	background-color: var(--bg-z0);
+	margin-top: 150px;
+}
+@media (max-height: 750px) {
+	.windowToolHeader {
+		margin-top: 32px;
+	}
+}
+.windowToolHeader>.windowToolHeader-title {
+	text-align: center;
+	color: var(--text);
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: 600;
+}
+
+/* [ Tool Body ] */
+.windowToolBody {
+	background-color: var(--bg-z0);
+	pointer-events: all;
+	padding-left: 16px;
+	padding-bottom: 8px;
+	padding-right: 16px;
+	max-height: 400px;
+}
+
+/* Divider */
+.windowToolBody-divider {
+	line-height: 16px;
+	display: flex;
+	align-items: center
+}
+.windowToolBody-divider>.title {
+	color: var(--windowTextSubtitle);
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-right: 5px
+}
+.windowToolBody-divider>.bar {
+	width: 100%;
+	height: 1px;
+	border-top: thin solid rgba(158, 158, 158, 0.1)
+}
+
+/* Content */
+.windowToolBody-content {
+	width: 100%
+}
+
+.windowToolBody-content-block {
+	color: var(--text);
+	font-size: 18px;
+	font-weight: 500;
+	margin: 8px 0;
+}
+.windowToolBody-content-block.flex {
+	display: flex;
+	align-items: center;
+}
+.windowToolBody-content-block>.title {
+	color: var(--textDull);
+	font-size: 16px;
+	width: 100%;
+	margin: 8px 0;
+}
+.windowToolBody-content-block.flex>.title {
+	margin: 0;
+	margin-right: 6px;
+}
+.windowToolBody-content-block>.value {
+	color: var(--text);
+	font-size: 18px;
+	min-width: 18px;
+}
+.windowToolBody-content-block>.unit {
+	margin-left: 4px;
+}
+
+/* [ Tool Footer ] */
+.windowToolFooter {
+	background-color: var(--box);
+	pointer-events: all;
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	margin-bottom: 150px;
+	border-radius: 0 0 16px 16px
+}
+@media (max-height: 750px) {
+	.windowToolFooter {
+		margin-bottom: 32px;
+	}
+}
+.windowToolFooter-contentLeft {
+	display: flex;
+	width: 100%
+}
+.windowToolFooter-contentRight {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ SETTING ]*/
+
+.window-setting-unit {
+	margin-left: 4px;
+	min-width: 18px;
+}
+
+.window-setting-edit-btn {
+	background: none;
+	color: var(--text);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 16px;
+	border-radius: 3px;
+	-webkit-transition: color .1s;
+	transition: color .1s;
+	position: relative;
+	display: flex;
+	width: auto;
+	height: 30px;
+	min-height: 30px;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 2px;
+}
+.window-setting-edit-btn:hover {
+	color: var(--textSpecial);
+}

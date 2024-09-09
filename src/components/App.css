@@ -1,0 +1,222 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+/* Whitney Book Regular */
+@font-face {
+	font-family: Whitney;
+	font-weight: 400;
+	src: url('../fonts/Whitney/whitneyBookRegular.woff') format("woff")
+}
+
+/* Whitney Medium Regular */
+@font-face {
+	font-family: Whitney;
+	font-weight: 500;
+	src: url('../fonts/Whitney/WhitneyMediumRegular.woff') format("woff")
+}
+
+/* Whitney Semibold Regular */
+@font-face {
+	font-family: Whitney;
+	font-weight: 600;
+	src: url('../fonts/Whitney/WhitneySemiboldRegular.woff') format("woff")
+}
+
+/* Whitney Bold Regular */
+@font-face {
+	font-family: Whitney;
+	font-weight: 700;
+	src: url('../fonts/Whitney/WhitneyBoldRegular.woff') format("woff")
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ ROOT ]*/
+
+:root {
+	--bg-z0: #000;
+	--bg-z1: #1b1b1b;
+	--box: #502582;
+	--action: #FFEC00;
+	--warn: #F53B3B;
+	--text: #f2f5f6;
+	--text-title: #F53B3B;
+	--text-dull: #adadad;
+	--text-dull-hover: #dcddde;
+}
+
+body,
+html {
+	background-color: var(--bg-z0);
+	font-family: "Whitney", sans-serif;
+	text-rendering: optimizeLegibility;
+	font-size: 16px;
+	width: 100vw;
+	height: 100%;
+	margin: 0;
+	padding:0;
+}
+
+#root {
+	height: 100%;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+::placeholder,
+body,
+button,
+input,
+select,
+textarea {
+	font-family: "Whitney", sans-serif;
+	text-rendering: optimizeLegibility
+}
+
+a,
+button,
+div,
+input,
+label,
+select,
+span,
+strong,
+textarea {
+	outline: 0
+}
+
+button {
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	box-shadow: none;
+	border: none
+}
+
+.btn-text-default {
+	background-color: var(--action);
+	color: var(--bg-z0);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 17px;
+	border-radius: 8px;
+	border: 2px solid transparent;
+	-webkit-transition: background-color .17s ease, color .17s ease;
+	transition: background-color .17s ease, color .17s ease;
+	position: relative;
+	display: flex;
+	height: 38px;
+	min-width: 96px;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 2px 16px
+}
+.btn-text-default:hover {
+	color: var(--bg-z1)
+}
+
+.btn-text-simple {
+	background: none;
+	color: var(--action);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 16px;
+	position: relative;
+	display: flex;
+	width: auto;
+	height: 38px;
+	min-width: 96px;
+	min-height: 38px;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 2px 16px
+}
+.btn-text-simple:hover .content {
+	background-image: linear-gradient(0deg, transparent, transparent 1px, var(--action) 0, var(--action) 2px, transparent 0);
+}
+
+.btn-icon-default {
+  background: none;
+  color: var(--text-dull);
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+	flex-shrink: 0
+}
+
+.btn-icon-default:hover {
+	color: var(--text-dull-hover);
+}
+
+.btn-icon-red {
+ background: none;
+ color: var(--warn);
+ border-radius: 4px;
+ position: relative;
+ display: flex;
+ width: 38px;
+ height: 38px;
+ padding: 0;
+ margin: 0;
+ align-items: center;
+ justify-content: center;
+ box-sizing: border-box;
+ flex-shrink: 0
+}
+
+.btn-icon-red:hover {
+ color: var(--warn);
+}
+
+.input-large-text {
+	background-color: rgba(0, 0, 0, 0.1);
+	color: var(--text);
+	font-size: 16px;
+	user-select: text;
+	-webkit-transition: border-color .30s ease-in-out;
+	transition: border-color .30s ease-in-out;
+	border-radius: 6px;
+	height: 28px;
+	width: 100%;
+	padding: 0px 4px;
+	box-sizing: border-box;
+	border: 1px solid var(--bg-z1);
+}
+.input-large-text:focus {
+	border-color: var(--action)
+}
+
+.textarea-large {
+	background-color: rgba(0, 0, 0, 0.1);
+	color: var(--text);
+	box-shadow: none;
+	outline: none;
+	-webkit-transition: border-color .30s ease-in-out;
+	transition: border-color .30s ease-in-out;
+	border-radius: 6px;
+	user-select: text;
+	padding: 4px;
+	margin: 0;
+	text-align: left;
+	width: calc(100% - 10px);
+	resize: none;
+	font-size: 16px;
+	line-height: 20px;
+	font-size: 100%;
+	border: 1px solid var(--bg-z1);
+	height: 40px
+}
+.textarea-large:focus {
+	border-color: var(--action)
+}
+.textarea-large.line-3 {
+	height: 60px
+}
